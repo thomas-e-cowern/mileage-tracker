@@ -1,24 +1,24 @@
 const mongoose = require('mongoose');
 
 const milesSchema = new mongoose.Schema({
-  odemeter : {
-    type: Number,
+  odometer : {
+    type: String,
     required: true,
     trim: true,
     default: 0
   },
   date: {
-    type: Date,
+    type: String,
     required: false,
   },
   gallons: {
-    type: Number,
+    type: String,
     required: false,
     trim: true,
     default: 0
   },
   cost: {
-    type: Number,
+    type: String,
     required: false,
     default: 0.00
   }
